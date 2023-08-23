@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
-    "target": "esnext"
+    "target": "esnext",
+    "version": "0.0.0",
+    "type": "module"
   }
 }

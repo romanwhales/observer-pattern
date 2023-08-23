@@ -1,3 +1,5 @@
+import Observer from './observer.js';
+
 export function sendToGoogleAnalytics(data) {
   console.log('Sent to Google analytics: ', data);
 }
@@ -9,3 +11,7 @@ export function sendToCustomAnalytics(data) {
 export function sendToEmail(data) {
   console.log('Sent to email: ', data);
 }
+
+Observer.subscribe(sendToCustomAnalytics);
+Observer.subscribe(sendToGoogleAnalytics);
+Observer.subscribe(sendToEmail);
