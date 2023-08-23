@@ -5,7 +5,7 @@ export default Object.freeze({
   subscribe: (func) => observers.push(func),
   unsubscribe: (func) => {
     [...observers].forEach((observer, index) => {
-      if (observer == func) {
+      if (observer === func) {
         observers.splice(index, 1);
       }
     });

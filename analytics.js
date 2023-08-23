@@ -1,4 +1,4 @@
-import Observer from './observer.js';
+import Observer from './observer';
 
 export function sendToGoogleAnalytics(data) {
   console.log('Sent to Google analytics: ', data);
